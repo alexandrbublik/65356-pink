@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Минаев](https://up.htmlacademy.ru/adaptive/12/user/65356).
-* Наставник: [Денис Быков](https://htmlacademy.ru/profile/id66426).
+* Наставник: `Неизвестно`.
 
 ---
 
