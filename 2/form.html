@@ -15,7 +15,7 @@
             <div class="main_nav--wrapper">
               <ul class="main_nav--list site_list">
                 <li class="site_list--item site_list--item_active">
-                  <a href="#">Главная</a>
+                  <a href="index.html">Главная</a>
                 </li>
                 <li class="site_list--item">
                   <a href="photo.html">Фотографии</a>
@@ -38,48 +38,48 @@
         <form class="form_data" action="https://echo.htmlacademy.ru" method="post" name="form_data">
           <section class="form_data--user_data">
             <label for="surname" class="user_data--label">Фамилия:</label>
-            <input type="text" class="user_data--input" id="surname" name="" placeholder="Укажите вашу фамилию" required>
+            <input type="text"  class="user_data--input" id="surname" name="surname"  placeholder="Укажите вашу фамилию" required>
             <label for="name" class="user_data--label">Имя:</label>
-            <input type="text" class="user_data--input" id="name" placeholder="Введите ваше имя" required>
+            <input type="text" class="user_data--input" id="name" name="name"  placeholder="Введите ваше имя" required>
             <label for="patronymic" class="user_data--label">Отчество:</label>
-            <input type="text" class="user_data--input" id="patronymic" placeholder="Ну и отчество тоже">
+            <input type="text" class="user_data--input" id="patronymic" name="patronymic"  placeholder="Ну и отчество тоже">
           </section>
 
           <section class="form_data--achivements">
             <p class="achivements--text_description">Ваши безбашенные достижения в путешествии</p>
 
             <section class="achivements_option">
-              <input type="checkbox" name="" value="" id="selfie" checked>
+              <input type="checkbox" name="achivement" value="Сделал селфи с акулой" id="selfie" checked>
               <div class="achivements--styled_checkbox"></div>
               <label for="selfie">Сделал селфи с акулой</label>
             </section>
 
             <section class="achivements_option">
-              <input type="checkbox" name="" value="" id="beach" checked>
+              <input type="checkbox" name="achivement" value="Обгорел на пляже" id="beach" checked>
               <div class="achivements--styled_checkbox"></div>
               <label for="beach">Обгорел на пляже</label>
             </section>
 
             <section class="achivements_option">
-              <input type="checkbox" name="" value="" id="chuck">
+              <input type="checkbox" name="achivement" value="Видел Чака Норриса" id="chuck">
               <div class="achivements--styled_checkbox"></div>
               <label for="chuck">Видел Чака Норриса</label>
             </section>
 
             <section class="achivements_option">
-              <input type="checkbox" name="" value="" id="souvenir">
+              <input type="checkbox" name="achivement" value="Накупил Сувениров" id="souvenir">
               <div class="achivements--styled_checkbox"></div>
               <label for="souvenir">Накупил Сувениров</label>
             </section>
 
             <section class="achivements_option">
-              <input type="checkbox" name="" value="" id="tower" checked>
+              <input type="checkbox" name="achivement" value="Удержал башню" id="tower" checked>
               <div class="achivements--styled_checkbox"></div>
               <label for="tower">Удержал башню</label>
             </section>
 
             <section class="achivements_option">
-              <input type="checkbox" name="" value="" id="hotel">
+              <input type="checkbox" name="achivement" value="Разгромил отель" id="hotel">
               <div class="achivements--styled_checkbox"></div>
               <label for="hotel">Разгромил отель</label>
             </section>
@@ -93,10 +93,10 @@
               <button type="button" name="button">OK</button>
             </div>
             <label for="surname" class="user_data--label">Номер телефона</label>
-            <input type="text" class="user_data--input" id="surname" name="" placeholder="Номер,пожалуйста">
+            <input type="nubmer" class="user_data--input" id="surname" name="telephone" placeholder="Номер,пожалуйста">
 
             <label for="surname" class="user_data--label">Адрес почты</label>
-            <input type="text" class="user_data--input" id="surname" name="" placeholder="Введите почту" required>
+            <input type="email" class="user_data--input" id="surname" name="email" placeholder="Введите почту" required>
 
           </section>
 
@@ -131,7 +131,7 @@
 
           <section class="form_data--emotions">
             <p class="emotions_description">Опишите свои эмоции</p>
-            <textarea name="name" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea name="emotions" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </section>
 
           <input type="submit" name="form_data" value="ОТПРАВИТЬ ФОРМУ">
