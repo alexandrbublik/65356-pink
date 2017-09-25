@@ -11,7 +11,7 @@
           <a href="#" class="pink_logo">PINK</a>
           <div class="main_nav">
             <button type="button" class="main_nav--toggle" name="button"><img src="http://placehold.it/50x24" alt=""></button>
-            <div class="main_nav--wrapper">
+            <nav class="main_nav_wrapper">
               <ul class="main_nav--list site_list">
                 <li class="site_list--item site_list--item_active">
                   <a href="index.html">Главная</a>
@@ -26,7 +26,7 @@
                   <a href="https://htmlacademy.ru/">Htmlacademy</a>
                 </li>
               </ul>
-            </div>
+            </nav>
           </div>
         </header>
         <p class="section_description">Конкурс на самое безбашенное путешествие с Пинк</p>
@@ -109,19 +109,19 @@
             </div>
 
             <section class="platform_option">
-              <input type="radio" name="platform">
+              <input type="radio" name="platform" value="Pink для iOS">
               <div class="styled_radio"></div>
               <label for="" class="styled_label">Pink для iOS</label>
             </section>
 
             <section class="platform_option">
-              <input type="radio" name="platform">
+              <input type="radio" name="platform" value="Pink для Android">
               <div class="styled_radio"></div>
               <label for="" class="styled_label">Pink для Android</label>
             </section>
 
             <section class="platform_option">
-              <input type="radio" name="platform">
+              <input type="radio" name="platform" value="Windows Phone">
               <div class="styled_radio"></div>
               <label for="" class="styled_label">Windows Phone</label>
             </section>
@@ -133,9 +133,9 @@
             <textarea name="emotions" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </section>
 
-          <input type="submit" name="form_data" value="ОТПРАВИТЬ ФОРМУ">
+          <input type="submit" value="ОТПРАВИТЬ ФОРМУ">
         </form>
-        <p class="legend"><sup>*</sup>—ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
+        <p class="legend"><sup class="legend--required">*</sup>—ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
       </main>
       <footer class="page_footer">
         <a href="index.html"><img src="http://placehold.it/147x40" class="glasses" alt=""> PINK</a>
