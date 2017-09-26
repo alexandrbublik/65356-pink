@@ -6,13 +6,14 @@
   </head>
   <body>
     <div class="pink_form">
+
       <div class="pink_form--intro">
         <header class="page_header">
           <a href="#" class="pink_logo">PINK</a>
-          <div class="main_nav">
-            <button type="button" class="main_nav--toggle" name="button"><img src="http://placehold.it/50x24" alt=""></button>
-            <nav class="main_nav_wrapper">
-              <ul class="main_nav--list site_list">
+          <div class="header_nav">
+            <button type="button" class="header_nav--toggle" name="button"><img src="http://placehold.it/50x24" alt=""></button>
+            <nav class="header_nav_wrapper">
+              <ul class="header_nav--list site_list">
                 <li class="site_list--item site_list--item_active">
                   <a href="index.html">Главная</a>
                 </li>
@@ -29,9 +30,10 @@
             </nav>
           </div>
         </header>
-        <p class="section_description">Конкурс на самое безбашенное путешествие с Пинк</p>
+        <p class="intro_description">Конкурс на самое безбашенное путешествие с Пинк</p>
       </div>
-      <main class="main_content">
+
+      <main class="pink_form--main_content">
         <p class="main_content--extra">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
 
         <form class="form_data" action="https://echo.htmlacademy.ru" method="post" name="form_data">
@@ -48,39 +50,39 @@
             <p class="achivements--text_description">Ваши безбашенные достижения в путешествии</p>
 
             <section class="achivements_option">
-              <input type="checkbox" name="achivement" value="Сделал селфи с акулой" id="selfie" checked>
+              <input type="checkbox" class="input_display_none" name="achivement" value="Сделал селфи с акулой" id="selfie" checked>
               <div class="achivements--styled_checkbox"></div>
-              <label for="selfie">Сделал селфи с акулой</label>
+              <label for="selfie" class="achivements--label">Сделал селфи с акулой</label>
             </section>
 
             <section class="achivements_option">
-              <input type="checkbox" name="achivement" value="Обгорел на пляже" id="beach" checked>
+              <input type="checkbox" class="input_display_none" name="achivement" value="Обгорел на пляже" id="beach" checked>
               <div class="achivements--styled_checkbox"></div>
-              <label for="beach">Обгорел на пляже</label>
+              <label for="beach" class="achivements--label">Обгорел на пляже</label>
             </section>
 
             <section class="achivements_option">
-              <input type="checkbox" name="achivement" value="Видел Чака Норриса" id="chuck">
+              <input type="checkbox" class="input_display_none" name="achivement" value="Видел Чака Норриса" id="chuck">
               <div class="achivements--styled_checkbox"></div>
-              <label for="chuck">Видел Чака Норриса</label>
+              <label for="chuck" class="achivements--label">Видел Чака Норриса</label>
             </section>
 
             <section class="achivements_option">
-              <input type="checkbox" name="achivement" value="Накупил Сувениров" id="souvenir">
+              <input type="checkbox" class="input_display_none" name="achivement" value="Накупил Сувениров" id="souvenir">
               <div class="achivements--styled_checkbox"></div>
-              <label for="souvenir">Накупил Сувениров</label>
+              <label for="souvenir" class="achivements--label">Накупил Сувениров</label>
             </section>
 
             <section class="achivements_option">
-              <input type="checkbox" name="achivement" value="Удержал башню" id="tower" checked>
+              <input type="checkbox" class="input_display_none" name="achivement" value="Удержал башню" id="tower" checked>
               <div class="achivements--styled_checkbox"></div>
-              <label for="tower">Удержал башню</label>
+              <label for="tower" class="achivements--label">Удержал башню</label>
             </section>
 
             <section class="achivements_option">
-              <input type="checkbox" name="achivement" value="Разгромил отель" id="hotel">
+              <input type="checkbox" class="input_display_none" name="achivement" value="Разгромил отель" id="hotel">
               <div class="achivements--styled_checkbox"></div>
-              <label for="hotel">Разгромил отель</label>
+              <label for="hotel" class="achivements--label">Разгромил отель</label>
             </section>
 
           </section>
@@ -109,19 +111,19 @@
             </div>
 
             <section class="platform_option">
-              <input type="radio" name="platform" value="Pink для iOS">
+              <input type="radio" class="input_display_none" name="platform" value="Pink для iOS">
               <div class="styled_radio"></div>
               <label for="" class="styled_label">Pink для iOS</label>
             </section>
 
             <section class="platform_option">
-              <input type="radio" name="platform" value="Pink для Android">
+              <input type="radio" class="input_display_none" name="platform" value="Pink для Android">
               <div class="styled_radio"></div>
               <label for="" class="styled_label">Pink для Android</label>
             </section>
 
             <section class="platform_option">
-              <input type="radio" name="platform" value="Windows Phone">
+              <input type="radio" class="input_display_none" name="platform" value="Windows Phone">
               <div class="styled_radio"></div>
               <label for="" class="styled_label">Windows Phone</label>
             </section>
@@ -130,31 +132,32 @@
 
           <section class="form_data--emotions">
             <p class="emotions_description">Опишите свои эмоции</p>
-            <textarea name="emotions" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea name="emotions" class="emotions_textarea" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </section>
 
           <input type="submit" value="ОТПРАВИТЬ ФОРМУ">
         </form>
-        <p class="legend"><sup class="legend--required">*</sup>—ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
+        <p class="main_content--legend"><sup class="legend--required">*</sup>—ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
       </main>
-      <footer class="page_footer">
-        <a href="index.html"><img src="http://placehold.it/147x40" class="glasses" alt=""> PINK</a>
+
+      <footer class="pink_form--footer">
+        <a href="index.html"><img src="http://placehold.it/147x40" class="logo_glasses" alt=""> PINK</a>
         <div class="social_networks">
-          <span class="network_rounded">
+          <a class="network_rounded">
             <img class="twitter_icon" src="http://placehold.it/18x14" alt="">
-          </span>
+          </a>
 
-          <span class="network_rounded">
+          <a class="network_rounded">
             <img class="facebook_icon" src="http://placehold.it/9x18" alt="">
-          </span>
+          </a>
 
-          <span class="network_rounded">
+          <a class="network_rounded">
             <img class="youtube_icon" src="http://placehold.it/15x13" alt="">
-          </span>
+          </a>
         </div>
         <a href="#">
           Разработано
-          <img src="http://placehold.it/27x34" alt="">
+          <img src="http://placehold.it/27x34" class="htmlacademy_logo" alt="">
         </a>
       </footer>
     </div>
