@@ -9,8 +9,8 @@
 
       <div class="pink-intro">
         <header class="page-header">
-          <a href="#" class="pink-logo"><img class="logo-icon" src="http://placehold.it/75x22" alt="Логотип Пинк"></a>
-            <button type="button" class="page-header__button" name="button"> <img class="burger_icon" src="http://placehold.it/50x24" alt="кнопка меню"></button>
+          <a href="index.html"><img class="logo-icon" src="http://placehold.it/75x22" alt="Логотип Пинк"></a>
+            <button type="button" class="page-header__button" name="button"> <img class="burger-icon" src="http://placehold.it/50x24" alt="кнопка меню"></button>
             <nav class="header-nav">
               <ul class="header-nav__list site-list">
                 <li class="site-list__item site-list__item--active">
@@ -28,144 +28,163 @@
               </ul>
             </nav>
         </header>
-      <p class="intro-description">Фотографии пользователей</p>
+        <p class="intro-description">Фотографии пользователей</p>
       </div>
 
-
-      <main class="pink-photo__content">
+      <main class="pink-photo-content">
 
         <section class="content__about">
-          <h1 class="about">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h1>
+          <p class="about">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </section>
 
-        <section class="post best-day-post">
-          <div class="post-image__wrap">
+        <section class="post--best-day">
+          <!-- ПАНОРАМА ДНЯ планирую вставлять псевдоэлементом -->
+          <header class="post-image__wrap">
             <img class="best_day_image" src="http://placehold.it/320x137" alt="изображение поста">
-          </div>
+          </header>
+
           <div class="post-info">
-            <h3 class="post-info__user-name">Анна
+            <blockquote class="post-info__user-name">Анна
               <span class="post-date">(5 МИНУТ НАЗАД)</span>
-            </h3>
-            <p class="post-info__user-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <footer class="post-info__post-footer">
+            </blockquote>
+            <blockquote class="post-info__user-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote>
+            <footer class="post-info__footer">
               <button type="button" name="button" class="post-info__post-likes"><img class="like_icon" src="" alt="иконка сердца"></button>
-              <span class="post-info__likes_info">НРАВИТСЯ: 215</span>
+              <span class="post-info__likes_info">НРАВИТСЯ:
+                <span class="likes_count">215</span>
+              </span>
             </footer>
           </div>
         </section>
 
         <section class="post">
-          <div class="post-image__wrap">
+          <header class="post-image__wrap">
             <img class="post-image" src="http://placehold.it/280x180" alt="изображение поста">
-          </div>
+          </header>
           <div class="post-info">
-            <h3 class="post-info__user-name">Левон
+            <blockquote class="post-info__user-name">Левон
               <span class="post-date">(5 ЧАСОВ НАЗАД)</span>
-            </h3>
-            <p class="post-info__user-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <footer class="post-info__post-footer">
+            </blockquote>
+            <blockquote class="post-info__user-text">Вчера он на луну летал, сегодня в руки к нам попал.</blockquote>
+            <footer class="post-info__footer">
               <button type="button" name="button" class="post-info__post-likes"><img class="like_icon" src="" alt="иконка сердца"></button>
-              <span class="post-info__likes_info">НРАВИТСЯ: 356</span>
+              <span class="post-info__likes_info">НРАВИТСЯ:
+                <span class="likes_count">356</span>
+              </span>
             </footer>
           </div>
         </section>
 
         <section class="post">
-          <div class="post-image__wrap">
+          <header class="post-image__wrap">
             <img class="post-image" src="http://placehold.it/280x180" alt="изображение поста">
-          </div>
+          </header>
           <div class="post-info">
-            <h3 class="post-info__user-name">Антон
+            <blockquote class="post-info__user-name">Антон
               <span class="post-date">(12 ЧАСОВ НАЗАД)</span>
-            </h3>
-            <p class="post-info__user-text">Соседи будут рады!</p>
-            <footer class="post-info__post-footer">
+            </blockquote>
+            <blockquote class="post-info__user-text">Соседи будут рады!</blockquote>
+            <footer class="post-info__footer">
               <button type="button" name="button" class="post-info__post-likes"><img class="like_icon" src="" alt="иконка сердца"></button>
-              <span class="post-info__likes_info">НРАВИТСЯ: 666</span>
+              <span class="post-info__likes_info">НРАВИТСЯ:
+                <span class="likes_count">666</span>
+              </span>
             </footer>
           </div>
         </section>
 
         <section class="post">
-          <div class="post-image__wrap">
+          <header class="post-image__wrap">
             <img class="post-image" src="http://placehold.it/280x180" alt="изображение поста">
-          </div>
+          </header>
           <div class="post-info">
-            <h3 class="post-info__user-name">Борис
+            <blockquote class="post-info__user-name">Борис
               <span class="post-date">(20 ЧАСОВ НАЗАД)</span>
-            </h3>
-            <p class="post-info__user-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <footer class="post-info__post-footer">
+            </blockquote>
+            <blockquote class="post-info__user-text">Здесь могла быть ваша цитата о высоком и вечном.</blockquote>
+            <footer class="post-info__footer">
               <button type="button" name="button" class="post-info__post-likes"><img class="like_icon" src="" alt="иконка сердца"></button>
-              <span class="post-info__likes_info">НРАВИТСЯ: 219</span>
+              <span class="post-info__likes_info">НРАВИТСЯ:
+                <span class="likes_count">219</span>
+              </span>
             </footer>
           </div>
         </section>
 
         <section class="post">
-          <div class="post-image__wrap">
+          <header class="post-image__wrap">
             <img class="post-image" src="http://placehold.it/280x180" alt="изображение поста">
-          </div>
+          </header>
           <div class="post-info">
-            <h3 class="post-info__user-name">Сергей
+            <blockquote class="post-info__user-name">Сергей
               <span class="post-date">(25 ЧАСОВ НАЗАД)</span>
-            </h3>
-            <p class="post-info__user-text">Самая кубанская в мире!</p>
-            <footer class="post-info__post-footer">
+            </blockquote>
+            <blockquote class="post-info__user-text">Самая кубанская в мире!</blockquote>
+            <footer class="post-info__footer">
               <button type="button" name="button" class="post-info__post-likes"><img class="like_icon" src="" alt="иконка сердца"></button>
-              <span class="post-info__likes_info">НРАВИТСЯ: 4</span>
+              <span class="post-info__likes_info">НРАВИТСЯ:
+              <span class="likes_count">4</span>
+            </span>
             </footer>
           </div>
         </section>
 
         <section class="post">
-          <div class="post-image__wrap">
+          <header class="post-image__wrap">
             <img class="post-image" src="http://placehold.it/280x180" alt="изображение поста">
-          </div>
+          </header>
           <div class="post-info">
-            <h3 class="post-info__user-name">Максим
+            <blockquote class="post-info__user-name">Максим
               <span class="post-date">(40 ЧАСОВ НАЗАД)</span>
-            </h3>
-            <p class="post-info__user-text">Где снег-то?</p>
-            <footer class="post-info__post-footer">
+            </blockquote>
+            <blockquote class="post-info__user-text">Где снег-то?</blockquote>
+            <footer class="post-info__footer">
               <button type="button" name="button" class="post-info__post-likes"><img class="like_icon" src="" alt="иконка сердца"></button>
-              <span class="post-info__likes_info">НРАВИТСЯ: 150</span>
+              <span class="post-info__likes_info">НРАВИТСЯ:
+                <span class="likes_count">150</span>
+              </span>
             </footer>
           </div>
         </section>
 
         <section class="post">
-          <div class="post-image__wrap">
+          <header class="post-image__wrap">
             <img class="post-image" src="http://placehold.it/280x180" alt="изображение поста">
-          </div>
+          </header>
           <div class="post-info">
-            <h3 class="post-info__user-name">Надежда
+            <blockquote class="post-info__user-name">Надежда
               <span class="post-date">(45 ЧАСОВ НАЗАД)</span>
-            </h3>
-            <p class="post-info__user-text">Всем GM и взаимные лайки!</p>
-            <footer class="post-info__post-footer">
+            </blockquote>
+            <blockquote class="post-info__user-text">Всем GM и взаимные лайки!</blockquote>
+            <footer class="post-info__footer">
               <button type="button" name="button" class="post-info__post-likes"><img class="like_icon" src="" alt="иконка сердца"></button>
-              <span class="post-info__likes_info">НРАВИТСЯ: 150</span>
+              <span class="post-info__likes_info">НРАВИТСЯ:
+                <span class="likes_count">2560</span>
+              </span>
             </footer>
           </div>
         </section>
 
-        <section class="help__wrapper">
+        <div class="help__wrapper">
           <p class="help-text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-        </section>
+        </div>
 
-        <section class="your-post">
-          <img class="your-post-image" src="http://placehold.it/280x374" alt="загружаемое изображение">
-          <div class="your-post-image__settings">
-            <button class="crop-button" type="button" name="crop"><img src="http://placehold.it/44x44" alt="crop icon"></button>
-            <button class="fill-button" type="button" name="fill"><img src="http://placehold.it/48x43" alt="fill icon"></button>
-            <button class="contrast_button" type="button" name="contrast"><img src="http://placehold.it/32x32" alt="contrast icon"></button>
-            <input class="settings_control" type="range" name="" value="">
+        <form class="upload" action="index.html" method="post">
+          <img class="upload-image" src="http://placehold.it/280x374" alt="загружаемое изображение">
+          <div class="upload-image__settings">
+            <input type="radio" class="input-display-none" name="filters" id="crop" value="">
+            <label class="crop-button" for="crop"><img src="http://placehold.it/44x44" alt="crop icon"></label>
+            <input type="radio" class="input-display-none" name="filters" id="fill" value="">
+            <label class="fill-button" for="fill"><img src="http://placehold.it/48x43" alt="fill icon"></label>
+            <input type="radio" class="input-display-none" name="filters" id="contrast" value="">
+            <label class="contrast_button" for="contrast"><img src="http://placehold.it/32x32" alt="contrast icon"></label>
+            <div class="settings_control">
+              <div class="draggable-control"></div>
+            </div>
           </div>
-          <button type="button" class="post-button" name="button">ЗАПОСТИТЬ</button>
-          <button type="button" class="close-button" disabled>ОТМЕНА</button>
-        </section>
-
+          <button type="button" class="post-button" name="button">запостить</button>
+          <button type="button" class="close-button" disabled>отмена</button>
+        </form>
       </main>
 
       <footer class="pink-form__footer">
