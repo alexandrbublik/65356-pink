@@ -433,8 +433,151 @@ body {
     .pink-content .main-modal--success .main-modal__close {
       width: 88%; }
 
+/* photo.html */
+.pink-content--photo {
+  background: #ffffff;
+  font-family: "Open Sans Regular";
+  font-size: 0.875rem; }
+  .pink-content--photo .post {
+    width: 88%;
+    padding: 0 6%;
+    margin-top: 26px; }
+    .pink-content--photo .post__image-wrap {
+      width: 100%; }
+    .pink-content--photo .post__img {
+      width: 100%;
+      max-height: 100%; }
+    .pink-content--photo .post-info {
+      background: #f2f2f2;
+      padding: 0 0 26px 0; }
+      .pink-content--photo .post-info__username {
+        font-family: "Open Sans Bold";
+        margin: 0;
+        padding: 25px 17px 0 17px; }
+      .pink-content--photo .post-info__date {
+        font-family: "Open Sans Light";
+        font-size: 0.75rem; }
+      .pink-content--photo .post-info__user-text {
+        font-family: "Open Sans Regular"; }
+      .pink-content--photo .post-info__footer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding-left: 17px; }
+      .pink-content--photo .post-info__post-likes {
+        width: 13px;
+        height: 12px;
+        border: none;
+        background-color: transparent;
+        background-image: url("../img/icon-heart.svg");
+        background-repeat: no-repeat; }
+      .pink-content--photo .post-info__likes-info {
+        font-size: 0.75rem;
+        color: #d22856;
+        margin-left: 19px; }
+      .pink-content--photo .post-info__likes-count {
+        margin-left: 4px; }
+  .pink-content--photo .post--best-day {
+    width: 100%;
+    padding: 0;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .pink-content--photo .post--best-day .post__image-wrap {
+      min-height: 136px;
+      max-height: 180px; }
+    .pink-content--photo .post--best-day .post__best-day {
+      font-family: "Open Sans Bold";
+      font-size: 0.75rem;
+      position: absolute;
+      top: 0;
+      right: 6%;
+      padding: 13px 21px 14px 20px;
+      color: #ffffff;
+      background: #d22856;
+      margin: 0;
+      text-transform: uppercase; }
+    .pink-content--photo .post--best-day .post-info {
+      width: 88%; }
+  .pink-content--photo .pink-content__extra--help {
+    padding: 49px 6% 52px; }
+  .pink-content--photo .upload {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 88%;
+    padding: 20px 6% 41px;
+    background: #f2f2f2; }
+    .pink-content--photo .upload__image {
+      width: 100%; }
+    .pink-content--photo .upload__settings {
+      margin-top: 40px;
+      width: 200px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+    .pink-content--photo .upload__label {
+      cursor: pointer; }
+    .pink-content--photo .upload__control {
+      width: 100%;
+      height: 2px;
+      background: #283645;
+      margin-top: 39px;
+      position: relative; }
+    .pink-content--photo .upload__control-dragable {
+      width: 10px;
+      height: 10px;
+      border: 2px solid #d22856;
+      border-radius: 50%;
+      background: #f2f2f2;
+      position: absolute;
+      top: -6px;
+      left: 75%; }
+    .pink-content--photo .upload__button, .pink-content--photo .upload__close-button {
+      width: 100%;
+      padding: 17px 0 19px;
+      border: 3px solid #d22856;
+      border-radius: 40px;
+      color: #d22856;
+      font-family: "Open Sans Bold";
+      font-size: 1.125rem;
+      background: transparent;
+      margin-top: 73px; }
+    .pink-content--photo .upload__close-button {
+      border-color: #dddfe0;
+      color: #dddfe0;
+      margin-top: 12px; }
+
+/* end of photo.html */
 .visibility-hidden,
-.achivements__binded-input {
+.achivements__binded-input,
+.input-display-none {
   display: none; }
 
 .information {
