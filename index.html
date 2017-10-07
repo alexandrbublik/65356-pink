@@ -13,25 +13,25 @@
         <section class="header-top-menu">
           <div class="header-top-menu__layout">
             <a class="page-header__logo" href="index.html"><img width="50px" height="24px" class="logo-icon" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк"></a>
-            <button type="button" class="page-header__button" name="button"> <img class="burger-icon" src="img/icon-menu-burger.svg" alt="кнопка меню"></button>
+            <input type="checkbox" class="page-header__input" name="burger" id="toggle_burger" value="" checked>
+            <label for="toggle_burger" class="page-header__button" name="burger"> <img class="burger-icon" src="img/icon-menu-burger.svg" alt="кнопка меню"></label>
+            <nav class="header-nav">
+              <ul class="header-nav__list site-list">
+                <li class="site-list__item site-list__item--active">
+                  <a class="site-list__link">Главная</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="photo.html">Фотографии</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="form.html">Конкурс</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="https://htmlacademy.ru/">Html academy</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-
-          <nav class="header-nav">
-            <ul class="header-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
-                <a class="site-list__link">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="photo.html">Фотографии</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="form.html">Конкурс</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru/">Html academy</a>
-              </li>
-            </ul>
-          </nav>
         </section>
         <img src="img/iphone-hand-mobile@1x.png" class="page-header__smartphone" alt="изображение со смартфоном">
       </header>
