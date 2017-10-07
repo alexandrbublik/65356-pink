@@ -157,7 +157,7 @@ body {
       font-size: 1.125rem;
       border: 3px solid #ffffff;
       border-radius: 30px;
-      padding: 17px 36px 19px 37px;
+      padding: 12px 35px 15px 36px;
     }
 
     .markets__list {
@@ -324,6 +324,7 @@ body {
         font-size: 1.125rem;
         position: relative;
         left: 70px;
+        line-height: 50px;
 
         &::before,
         &::after {
@@ -344,7 +345,7 @@ body {
           width: 15px;
           height: 15px;
           left: -58px;
-          top: 5px;
+          top: 18px;
           background: #d22856;
           transform: scale(0);
           transition: all 0.5s ease;
@@ -697,6 +698,10 @@ body {
       margin: 0 20px;
       text-align: center;
     }
+  }
+
+  .reviews__text {
+    font-family: "Open Sans Regular";
   }
 }
 
