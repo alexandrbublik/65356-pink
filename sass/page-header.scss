@@ -1,0 +1,94 @@
+.page-header {
+  width: 100%;
+  min-height: 237px;
+  max-height: 661px;
+  display: flex;
+  flex-direction: column;
+  background: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+
+  .page-header__logo {
+    margin-left: 6%;
+  }
+
+  .page-header__input {
+    display: none;
+  }
+
+  .page-header__button {
+    margin-right: 6%;
+    cursor: pointer;
+  }
+
+  .page-header__input:checked + label > img {
+    display: none;
+  }
+
+  .page-header__input:checked + label {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/icon-menu-cross.svg");
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+
+  .page-header__input:checked + label + nav {
+    height: 328px;
+  }
+
+
+  .page-header__smartphone {
+    margin-top: 110px;
+    width: 80.3%;
+  }
+
+  .page-header__title {
+    font-family: "Open Sans Light";
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 6%;
+    margin: 25% 0;
+  }
+}
+
+@media (min-width: 660px) {
+  .page-header {
+    min-height: 661px;
+
+    .page-header__title {
+      font-size: 3.125rem;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+
+    .page-header__smartphone {
+      width: 466px;
+      height: 545px;
+      z-index: -1;
+      position: absolute;
+      right: 6%;
+      bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-header {
+    min-height: 395px;
+
+    .page-header__input:checked + label + nav {
+      height: 24px;
+    }
+
+    .page-header__input,
+    .page-header__button {
+      display: none;
+    }
+  }
+}

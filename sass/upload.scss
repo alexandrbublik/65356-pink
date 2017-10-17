@@ -1,0 +1,144 @@
+.upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 88%;
+  padding: 20px 6% 41px;
+  background: #f2f2f2;
+
+  .upload__image {
+    width: 100%;
+  }
+
+  .upload__settings-wrapper {
+    width: 100%;
+  }
+
+  .upload__settings {
+    margin-top: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .upload__label {
+    cursor: pointer;
+  }
+
+  .upload__control {
+    width: 100%;
+    height: 2px;
+    background: #283645;
+    margin-top: 39px;
+    position: relative;
+  }
+
+  .upload__control-dragable {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+    background: #f2f2f2;
+    position: absolute;
+    top: -6px;
+    left: 75%;
+  }
+
+  .upload__btns {
+    width: 50%;
+  }
+
+  .upload__button,
+  .upload__close-button {
+    width: 100%;
+    padding: 17px 0 19px;
+    border: 3px solid #d22856;
+    border-radius: 40px;
+    color: #d22856;
+    font-family: "Open Sans Bold";
+    font-size: 1.125rem;
+    background: transparent;
+    margin-top: 73px;
+  }
+
+  .upload__close-button {
+    border-color: #dddfe0;
+    color: #dddfe0;
+    margin-top: 12px;
+  }
+}
+
+@media (min-width: 660px) {
+  .upload {
+    width: 93%;
+    padding: 57px 3.5% 54px;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    .upload__image {
+      width: 48%;
+      margin-right: 4%;
+    }
+
+    .upload__settings-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 0;
+    }
+
+    .upload__settings {
+      width: 48%;
+      flex-direction: column;
+      margin: 0;
+    }
+
+    .upload__label[for="contrast"] {
+      margin-left: 8px;
+    }
+
+    .upload__control--tablet {
+      width: 74%;
+      height: 2px;
+      position: relative;
+      background: #283645;
+      margin-left: 30px;
+    }
+
+    .upload__control {
+      display: none;
+    }
+
+    .upload__btns {
+      width: 48%;
+      margin-top: -35%;
+    }
+
+    .upload__button {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .upload {
+    .upload__btns {
+      margin-top: -6%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .upload__button,
+    .upload__close-button {
+      width: 183px;
+    }
+
+    .upload__close-button {
+      margin: 0;
+    }
+  }
+}

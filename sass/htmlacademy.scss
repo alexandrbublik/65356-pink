@@ -1,0 +1,16 @@
+.htmlacademy {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #283645;
+  font-size: 0.875rem;
+  padding-bottom: 40px;
+
+  .htmlacademy__logo {
+    margin-left: 16px;
+  }
+
+  &--nav {
+    padding-bottom: 0;
+  }
+}

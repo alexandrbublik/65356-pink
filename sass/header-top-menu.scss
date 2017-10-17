@@ -1,0 +1,30 @@
+.header-top-menu {
+  width: 100%;
+  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.3);
+  position: relative;
+
+  .header-top-menu__layout {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 660px) {
+  .header-top-menu__layout {
+    align-items: baseline;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-top-menu {
+    padding: 27px 0 43px;
+
+    .header-top-menu__layout {
+      align-items: center;
+    }
+  }
+}

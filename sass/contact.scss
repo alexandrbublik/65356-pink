@@ -1,0 +1,43 @@
+.contact {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+
+  .contact__block {
+    margin: 0;
+  }
+
+  .contact__title {
+    font-size: 1.125rem;
+    font-family: "Open Sans Bold";
+    margin: 27px 0 0;
+  }
+
+  .contact__description {
+    color: #d22856;
+    display: block;
+    padding: 0 6%;
+  }
+}
+
+@media (min-width: 660px) {
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .contact__block {
+      flex-basis: 50%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact {
+    width: 88%;
+
+    .contact__block {
+      flex-basis: 33%;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.effect {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+
+  .effect__info {
+    width: 26%;
+    font-family: "Open Sans Regular";
+  }
+}
+
+@media (min-width: 660px) {
+  .effect {
+    display: flex;
+  }
+}
