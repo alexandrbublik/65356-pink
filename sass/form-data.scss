@@ -104,7 +104,7 @@
   }
 
   .form-data__submit {
-    width: 100%;
+    width: 88%;
     font-family: "Open Sans Bold";
     font-size: 1.125rem;
     color: #ffffff;
@@ -113,7 +113,7 @@
     background: #2aab6d;
     padding: 25px 0;
     border-radius: 3px;
-    margin-top: 28px;
+    margin-bottom: 28px;
   }
 
   .form-data__content-legend {
@@ -127,6 +127,14 @@
 
   .form-data__legend-required {
     color: #d22856;
+  }
+
+  .form-data__end {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
   }
 
   .form-data__user-data,
@@ -235,10 +243,12 @@
     }
 
     .form-data__end {
+      width: 88%;
       order: 6;
-      display: flex;
+      flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      margin-top: 30px;
     }
 
     .form-data__submit {
@@ -268,10 +278,21 @@
 
     .form-data__user-data {
       width: 36%;
+      margin-left: 8%;
+      padding: 0;
+    }
+
+    .form-data__contacts {
+      padding: 0;
+    }
+
+    .form-data__contacts-item {
+      padding-left: 9%;
     }
 
     .form-data__about-platform {
       width: 36%;
+      margin-right: 8%;
     }
 
     .form-data__contacts,
