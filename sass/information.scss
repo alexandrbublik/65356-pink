@@ -1,0 +1,39 @@
+.information {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 107%;
+
+  .information__img {
+    margin-bottom: -42px;
+  }
+}
+
+@media (min-width: 660px) {
+  .information {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .information__img {
+    width: 39%;
+    order: 2;
+    margin-bottom: -90px;
+    margin-left: 3%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .information {
+    justify-content: center;
+
+    .information__img {
+      display: none;
+    }
+  }
+}

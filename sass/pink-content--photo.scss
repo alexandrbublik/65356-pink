@@ -1,0 +1,192 @@
+.pink-content--photo {
+  background: #ffffff;
+  font-family: "Open Sans Regular";
+  font-size: 0.875rem;
+
+  .post {
+    width: 88%;
+    padding: 0 6%;
+    margin-top: 26px;
+
+    .post__image-wrap {
+      width: 100%;
+    }
+
+    .post__img {
+      width: 100%;
+      max-height: 100%;
+    }
+
+    .post-info {
+      background: #f2f2f2;
+      padding: 0 0 26px 0;
+      margin-top: -4px;
+
+      .post-info__username {
+        font-family: "Open Sans Bold";
+        margin: 0;
+        padding: 25px 17px 0 17px;
+      }
+
+      .post-info__date {
+        font-family: "Open Sans Light";
+        font-size: 0.75rem;
+      }
+
+      .post-info__user-text {
+        font-family: "Open Sans Regular";
+      }
+
+      .post-info__footer {
+        display: flex;
+        align-items: center;
+        padding-left: 17px;
+      }
+
+      .post-info__post-likes {
+        width: 13px;
+        height: 12px;
+        border: none;
+        background-color: transparent;
+        background-image: url("../img/icon-heart.svg");
+        background-repeat: no-repeat;
+      }
+
+      .post-info__likes-info {
+        font-size: 0.75rem;
+        color: #d22856;
+        margin-left: 19px;
+      }
+
+      .post-info__likes-count {
+        margin-left: 4px;
+      }
+    }
+  }
+
+  .post--best-day {
+    width: 100%;
+    padding: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .post__image-wrap {
+      min-height: 507px;
+      z-index: 1;
+    }
+
+    .post__img {
+      min-height: 507px;
+    }
+
+    .post__best-day {
+      font-family: "Open Sans Bold";
+      font-size: 0.75rem;
+      position: absolute;
+      top: 0;
+      right: 6%;
+      padding: 13px 21px 14px 20px;
+      color: #ffffff;
+      background: #d22856;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    .post-info {
+      width: 88%;
+    }
+  }
+
+  .pink-content__extra--help {
+    padding: 49px 6% 52px;
+  }
+}
+
+@media (min-width: 660px) {
+  .pink-content--photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    .post {
+      width: 45%;
+      padding: 0;
+    }
+
+    .post:nth-child(odd) {
+      margin-right: 1.5%;
+    }
+
+    .post:nth-child(even):not(:first-of-type) {
+      margin-left: 1.5%;
+    }
+
+    .post-info {
+      height: 155px;
+      position: relative;
+    }
+
+    .post-info__footer {
+      padding-right: 32px;
+      justify-content: space-between;
+      position: absolute;
+
+      .post-info__post-likes {
+        position: absolute;
+        right: 32px;
+      }
+
+      .post-info__likes-info {
+        margin-left: 0;
+      }
+    }
+
+    .post--best-day {
+      width: 100%;
+
+      .post__best-day {
+        top: 54px;
+        right: 3.5%;
+      }
+
+      .post-info {
+        width: 93%;
+        position: relative;
+
+        .post-info__footer {
+          position: absolute;
+          top: 25px;
+          right: 28px;
+
+          .post-info__post-likes {
+            position: inherit;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .pink-content--photo {
+    .post {
+      width: 29%;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+
+    .post:nth-of-type(3),
+    .post:nth-of-type(6) {
+      margin-left: 3% !important;
+      margin-right: 3% !important;
+    }
+
+    .post--best-day {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.pink-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: #f2f2f2;
+
+  .pink-content__extra {
+    width: 88%;
+    font-family: "Open Sans Regular";
+    font-size: 0.875rem;
+    text-align: center;
+    padding: 55px 6% 25px;
+    line-height: 30px;
+    margin: 0;
+    background: #ffffff;
+
+    &--break {
+      display: none;
+    }
+
+    &--tablet {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 660px) {
+  .pink-content {
+    background: #ffffff;
+
+    .pink-content__extra {
+      max-width: 495px;
+      font-size: 1.125rem;
+      padding: 100px 0 50px;
+
+      &--break {
+        display: block;
+      }
+
+      &--tablet {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (min-width: 660px) {
+  .pink-content {
+    .pink-content__extra {
+      max-width: 760px;
+
+      &--tablet {
+        display: inline;
+      }
+    }
+  }
+}

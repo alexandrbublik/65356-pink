@@ -1,0 +1,31 @@
+.effect {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+
+  .effect__info {
+    width: 26%;
+    font-family: "Open Sans Regular";
+    font-size: 0.875rem;
+  }
+
+  .effect__title {
+    font-family: "Open Sans Bold";
+    font-size: 1.875rem;
+  }
+}
+
+@media (min-width: 660px) {
+  .effect {
+    padding: 30px;
+    max-width: 88%;
+    display: flex;
+  }
+}
+
+@media (min-width: 660px) {
+  .effect {
+    max-width: 93%;
+  }
+}

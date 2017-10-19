@@ -1,0 +1,42 @@
+.app-info {
+  width: 100%;
+  background: #ffffff;
+
+  .app-info__slogan {
+    width: 88%;
+    font-family: "Open Sans Light";
+    font-size: 1.5rem;
+    line-height: 30px;
+    color: #283645;
+    text-align: center;
+    background: #ffffff;
+    margin: 0;
+    padding: 46px 6%;
+
+    &--break {
+      display: none;
+    }
+
+    &--padding-bottom {
+      padding: 0 6% 46px;
+    }
+  }
+}
+
+@media (min-width: 660px) {
+  .app-info {
+    .app-info__slogan {
+      font-size: 2.4rem;
+      padding: 59px 6% 0;
+
+      &--break {
+        display: block;
+      }
+    }
+
+    .app-info__slogan--padding-bottom {
+      padding: 12px 6% 56px;
+      line-height: 50px;
+    }
+  }
+}

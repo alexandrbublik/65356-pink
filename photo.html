@@ -12,32 +12,40 @@
       <header class="page-header">
         <section class="header-top-menu">
           <div class="header-top-menu__layout">
-            <a class="page-header__logo" href="index.html"><img width="50px" height="24px" class="logo-icon" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк"></a>
-            <button type="button" class="page-header__button" name="button"> <img class="burger-icon" src="img/icon-menu-burger.svg" alt="кнопка меню"></button>
+            <a class="page-header__logo" href="index.html">
+              <picture>
+                <source media="(max-width: 659px)" srcset="img/logo-pink-white-mobile.svg">
+                  <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                    <img class="logo-icon" src="img/logo-pink-white-mobile.svg" alt="Логотип Пинк">
+              </picture>
+            </a>
+            <input type="checkbox" class="page-header__input" name="burger" id="toggle_burger" value="" checked>
+            <label for="toggle_burger" class="page-header__button"> <img class="burger-icon" src="img/icon-menu-burger.svg" alt="кнопка меню"></label>
+            <nav class="header-nav">
+              <ul class="header-nav__list site-list">
+                <li class="site-list__item site-list__item--active">
+                  <a class="site-list__link" href="index.html">Главная</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="photo.html">Фотографии</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="form.html">Конкурс</a>
+                </li>
+                <li class="site-list__item">
+                  <a class="site-list__link" href="https://htmlacademy.ru/">HTML academy</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-
-          <nav class="header-nav">
-            <ul class="header-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
-                <a class="site-list__link" href="index.html">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link">Фотографии</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="form.html">Конкурс</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru/">Html academy</a>
-              </li>
-            </ul>
-          </nav>
         </section>
         <p class="page-header__title">Фотографии пользователей</p>
       </header>
 
       <main class="pink-content pink-content--photo">
-          <p class="pink-content__extra">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <p class="pink-content__extra">Взгляните на фотографии, которые выкладывают пользователи!
+            <br class="pink-content__extra--break"> Видите, как не хватает ваших?
+          </p>
 
         <section class="post post--best-day">
           <header class="post__image-wrap">
@@ -175,47 +183,65 @@
         <form class="upload" action="index.html" method="get">
           <img class="upload__image" src="img/photo-road-mobile@1x.jpg" alt="загружаемое изображение">
           <div class="upload__settings">
-            <input type="radio" class="input-display-none" name="filters" id="crop" value="">
-            <label class="upload__label" for="crop"><img src="img/icon-editor-crop.svg" alt="crop icon"></label>
-            <input type="radio" class="input-display-none" name="filters" id="fill" value="">
-            <label class="upload__label" for="fill"><img src="img/icon-editor-fill.svg" alt="fill icon"></label>
-            <input type="radio" class="input-display-none" name="filters" id="contrast" value="">
-            <label class="upload__label" for="contrast"><img src="img/icon-editor-contrast.svg" alt="contrast icon"></label>
+            <div class="upload__settings-wrapper">
+              <input type="radio" class="input-display-none" name="filters" id="crop" value="">
+              <label class="upload__label" for="crop"><img src="img/icon-editor-crop.svg" alt="crop icon"></label>
+              <div class="upload__control--tablet">
+                <div class="upload__control-dragable"></div>
+              </div>
+            </div>
+            <div class="upload__settings-wrapper">
+              <input type="radio" class="input-display-none" name="filters" id="fill" value="">
+              <label class="upload__label" for="fill"><img src="img/icon-editor-fill.svg" alt="fill icon"></label>
+              <div class="upload__control--tablet">
+                <div class="upload__control-dragable"></div>
+              </div>
+            </div>
+            <div class="upload__settings-wrapper">
+              <input type="radio" class="input-display-none" name="filters" id="contrast" value="">
+              <label class="upload__label" for="contrast"><img src="img/icon-editor-contrast.svg" alt="contrast icon"></label>
+              <div class="upload__control--tablet">
+                <div class="upload__control-dragable"></div>
+              </div>
+            </div>
             <div class="upload__control">
               <div class="upload__control-dragable"></div>
             </div>
           </div>
-          <hr>
-          <button type="submit" class="upload__button" name="button">запостить</button>
-          <button type="button" class="upload__close-button" disabled>отмена</button>
+          <div class="upload__btns">
+            <button type="submit" class="upload__button" name="button">запостить</button>
+            <button type="button" class="upload__close-button" disabled>отмена</button>
+          </div>
         </form>
       </main>
 
       <footer class="page-footer">
-        <a href="index.html" class="page-footer__logo"><img src="img/logo-pink-blue-mobile.svg" class="page-footer__logo-glasses" alt="логотип пинк с очками"></a>
-        <ul class="social-networks">
-          <li class="social-networks__item">
-            <a class="social-networks__link">
-              <img class="social-networks__icon" src="img/icon-twitter.svg" alt="логотип Twitter">
-            </a>
-          </li>
+        <nav class="page-footer__nav">
+          <a href="index.html" class="page-footer__logo"><img src="img/logo-pink-blue-mobile.svg" class="page-footer__logo-glasses" alt="логотип пинк с очками"></a>
+          <ul class="social-networks">
+            <li class="social-networks__item">
+              <a class="social-networks__link">
+                <img class="social-networks__icon" src="img/icon-twitter.svg" alt="логотип Twitter">
+              </a>
+            </li>
 
-          <li class="social-networks__item">
-            <a class="social-networks__link">
-              <img class="social-networks__icon" src="img/icon-facebook.svg" alt="логотип Facebook">
-            </a>
-          </li>
+            <li class="social-networks__item">
+              <a class="social-networks__link">
+                <img class="social-networks__icon" src="img/icon-facebook.svg" alt="логотип Facebook">
+              </a>
+            </li>
 
-          <li class="social-networks__item">
-            <a class="social-networks__link">
-              <img class="social-networks__icon" src="img/icon-youtube.svg" alt="логотип Youtube">
-            </a>
-          </li>
-        </ul>
-        <a href="#" class="htmlacademy">
-          Разработано
-          <img src="img/logo-htmlacademy.svg" class="htmlacademy__logo" alt="логотип htmlacademy">
-        </a>
+            <li class="social-networks__item">
+              <a class="social-networks__link">
+                <img class="social-networks__icon" src="img/icon-youtube.svg" alt="логотип Youtube">
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="htmlacademy htmlacademy--nav">
+            Разработано
+            <img src="img/logo-htmlacademy.svg" class="htmlacademy__logo" alt="логотип htmlacademy">
+          </a>
+        </nav>
       </footer>
     </div>
   </body>

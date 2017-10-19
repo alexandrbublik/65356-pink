@@ -1,0 +1,36 @@
+.slider-controls {
+  width: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 23px;
+  align-self: center;
+
+  .slider-controls__input {
+    display: none;
+  }
+
+  .slider-controls__label {
+    display: flex;
+    width: 6px;
+    height: 6px;
+    background: #bec2c7;
+    border-radius: 50%;
+    border: 3px solid transparent;
+  }
+
+  .slider-controls__input:checked + .slider-controls__label {
+    background: #ffffff;
+    border-color: #283645;
+  }
+
+  &:last-child {
+    margin: 40px 0 42px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider-controls {
+    display: none;
+  }
+}
